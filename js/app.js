@@ -32,6 +32,21 @@ var app = new Framework7({
 		path: '/brands/',
     	url: 'brands.html',
     	name: 'brands',
+  		},
+		{
+		path: '/info/',
+    	url: 'info.html',
+    	name: 'info',
+  		},
+		{
+		path: '/bag/',
+    	url: 'bag.html',
+    	name: 'bag',
+  		},
+		{
+		path: '/confirm/',
+    	url: 'confirm.html',
+    	name: 'confirm',
   		}
 	],
 	dialog: {
@@ -52,3 +67,42 @@ var app = new Framework7({
 		closeOnEscape: true,
 	}
 });
+
+
+
+$$('#btnLogin').on('click', function (e) {
+	e.preventDefault();
+	
+	var $valid = $$('#form-login')[0].checkValidity();
+	if ($valid){
+        $$('#form-login').trigger('reset');	
+        app.loginScreen.close('#login');
+		
+		app.dialog.alert('¡ Welcome to Rungran Shop !');
+    }
+	
+});
+
+
+
+$$('#btnAddCart').on('click', function (e) {
+	e.preventDefault();
+	console.log('btn');
+	
+	
+	var notification = app.notification.create({
+      icon: '<i class="material-icons">check</i>',
+      title: 'Order',
+      titleRightText: '',
+      subtitle: '',
+      text: "Your order has been received.",
+      closeTimeout: 3000,
+    });
+    notification.open();
+	
+});
+
+
+
+
+

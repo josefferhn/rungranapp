@@ -6,7 +6,7 @@
 	--f7-bars-bg-color:#fff;/*toolbar*/
 	--f7-block-margin-vertical:20px;
 	--f7-card-footer-border-color:transparent; 
-	--color-oscuro:#7C899F;
+	--color-oscuro:#000;
 	--color-gris:#E6E8EA;
 	--color-verde:#4BB889;
 	--color-negro:#000;
@@ -146,18 +146,76 @@ h1,h2,h3,h4,h5,h6{
 
 
 
+.login-screen .page{
+	background-color: var(--f7-theme-color);
+}
+.login-screen .page-content{
+	padding: 15px;
+	background-color: transparent;
+	margin-top: 15% !important;
+}
+.login-screen form{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 30px 15px;
+	box-shadow: 0px 0px 15px 0px #7C899F;
+}
+.login-screen .login-screen-title{
+	color: #fff;
+	font-size: 34px;
+}
 
 
+.precio{
+	color: var(--f7-theme-color);
+	font-size: 22px;
+	font-weight: 600;
+}
+.review{
+	color: #818181;
+	font-size: 12px;
+	margin-top: 0;
+}
+.review span{
+	font-size: 12px;
+	color: #fcc00d;
+}
+.text-info{
+	font-size: 13px;
+}
+hr{
+	border: 1px solid #eee;
+}
+.button span{
+	vertical-align: middle;
+}
 
-
-
-
-
-
-
-
-
-
+#confirm{
+	margin-top: 25%;
+}
+.info-confirm{
+	background-color: #f2f2f2;
+	padding: 30px 20px;
+	border-radius: 10px;
+	text-align: center;
+}
+#confirm h2{
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#confirm .icon{
+	font-size: 60px;
+	color: #0e912c;
+}
+#confirm h3{
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+#confirm h3 span{
+	font-weight: 800;
+}
 
 
 
