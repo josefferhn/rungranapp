@@ -85,10 +85,9 @@ $$('#btnLogin').on('click', function (e) {
 
 
 
-$$('#btnAddCart').on('click', function (e) {
+$$(document).on('click', '#btnAddCart', function (e) {
 	e.preventDefault();
-	console.log('btn');
-	
+
 	
 	var notification = app.notification.create({
       icon: '<i class="material-icons">check</i>',
